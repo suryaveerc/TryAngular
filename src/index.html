@@ -1,0 +1,30 @@
+ 
+<html lang="en" ng-app='try'>
+<header><title>This is title</title></header>
+<head>
+	<script type="text/javascript" src="./js/angular.min.js"></script>
+	<script type="text/javascript" src="./js/app/app.module.js"></script>
+	<script type="text/javascript" src="./js/app/app.config.js"></script>
+	<script type="text/javascript" src="./js/blog-list/blog-list.module.js"></script>
+	<script type="text/javascript" src="./js/blog-list/blog-list.component.js"></script>
+	<style>
+	.new-class {
+		font-size: 50px;
+	}
+	.other-class {
+		font-size:32px;
+	}
+	</style>
+</head>
+<body>
+
+<h1 class="new-class" ng-class="{'other-class': name}">Hello, 
+	<span ng-if="name"> {{name}} !</span>
+	<span ng-if="!name"> World !</span>
+</h1>
+<input type="text" ng-model="name">
+
+<div class="" ng-controller='BlogListController'>
+</div>
+</body>
+</html>
